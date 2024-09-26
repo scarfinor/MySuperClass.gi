@@ -13,12 +13,26 @@ public class Crew extends Contractor{
         this.wage = wage;
         this.material = material;
     }
-    public void work() {
+    public String work() {
+        String a;
+        String b;
+
         switch (job) {
-            case "Base" -> this.name + "sets the base blocks";
-            case "Prep" -> this.name + "preps the trench with rock and compacts it.";
-            case "Laborer" -> this.name + "brings the " + material.display() + "and digs a trench";
+            case "Base" -> {
+                a = "sets the base";
+                return name + a;
+            }
+            case "Prep" -> {
+                a = "preps the trench with rock and compacts it.";
+                return name + a;
+            }
+            case "Laborer" -> {
+                a = "brings the ";
+                b = " and digs a trench";
+                return name + a + material.toString() + b;
+            }
         }
+        return null;
     }
     @Override
     public double getCost() {
