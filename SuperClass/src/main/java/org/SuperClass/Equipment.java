@@ -18,9 +18,8 @@ public class Equipment extends HardScapes{
         this.trucks = trucks;
     }
 
-
     @Override
     public double getCost() {
-        return machines.getCost() + trucks.getCost();
+        return ;
     }
 }
