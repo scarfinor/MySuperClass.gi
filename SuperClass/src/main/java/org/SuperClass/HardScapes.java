@@ -1,9 +1,5 @@
 package org.SuperClass;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
 public abstract class HardScapes {
     double cost;
     private Design design;
